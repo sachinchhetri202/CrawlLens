@@ -19,3 +19,4 @@ coverage/
 htmlcov/
 .mypy_cache/
 .pytest_cache/
+scraping_history.json
