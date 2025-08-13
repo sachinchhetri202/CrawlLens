@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crawllens"
+version = "0.1.0"
+description = "CrawlLens — a polite website crawler and content extractor (GUI + CLI)"
+authors = [
+  {name = "Sachin Chhetri"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "requests>=2.31",
+  "beautifulsoup4>=4.12",
+  "typer>=0.12",
+  "rich>=13",
+  "pydantic>=2",
+  "pydantic-settings>=2"
+]
+
+[project.optional-dependencies]
+all = ["tldextract>=5", "ttkbootstrap>=1.10", "lxml>=5"]
+
+[project.scripts]
+crawllens = "crawllens.cli:main"
+crawllens-gui = "crawllens.ui.gui:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+addopts = "-q"
