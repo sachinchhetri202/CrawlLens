@@ -1,5 +1,7 @@
 ## CrawlLens
 
+<img width="1919" height="1017" alt="Screenshot 2025-08-13 135127" src="https://github.com/user-attachments/assets/450cc9e5-7a01-413f-98eb-397fe7328d55" />
+
 Polite, structured website crawler with a desktop GUI and a headless CLI. CrawlLens discovers pages (optionally via sitemaps), honors `robots.txt` and crawl delays, extracts clean page blocks (headings, paragraphs, lists, code, tables), and writes training-ready JSONL plus raw HTML snapshots.
 
 - **Author:** Sachin Chhetri  
@@ -95,6 +97,9 @@ CrawlLens is designed to be respectful:
 - Bounded BFS depth, careful sitemap usage, and small link audit samples
 
 Please crawl responsibly, identify yourself via `user_agent`, and never overwhelm a site.
+
+## V1
+<img width="269" height="201" alt="Screenshot 2025-08-13 135200" src="https://github.com/user-attachments/assets/e9c3e02e-c3b2-49cc-bc6a-0f41bd88505a" />
 
 ## License
 
